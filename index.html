@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaidim</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <div class="center">
+      <img class="title" src="./images/title.png"></img>
+    </div>
+    <div class="box-full">
+        <br>
+        <div class="warning">
+            <h2 style="margin: 0px;">WARNING</h2>
+            <p style="margin: 0px;">Do not enter UpperCase letters</p>
+        </div>
+        <br>
+      <div class="dark">
+        <p class="text">Enter the<span class="text-yellow">letters</span>and check to begin.</p>
+        <p class = "text">Click<span class="text-red">Reset</span>to reset the<span class="text-yellow">letters</span>back</p>
+      </div>
+      <br>
+      <button class="button-blue" id = "check" onclick="check()">Check</button>
+      <button class="button-red" id="reset" onclick="reset()">Reset</button>
+      <br>
+      <br>
+      <div class="box">
+        <ul id="hexGrid" class="">
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="javascript:letter(0)">
+                <p id="ltr0" class="petter-nest-pas-un-crime">
+                    y
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="javascript:letter(1)">
+                <p id="ltr1" class="petter-nest-pas-un-crime">
+                    s
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="javascript:letter(2)">
+                <p id="ltr2" class="petter-nest-pas-un-crime">
+                    w
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="javascript:letter(3)" id="center-letter">
+                <p id="ltr3" class="petter-nest-pas-un-crime">
+                    g
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="javascript:letter(4)">
+                <p id="ltr4" class="petter-nest-pas-un-crime">
+                    a
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="javascript:letter(5)">
+                <p id="ltr5" class="petter-nest-pas-un-crime">
+                    h
+                </p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="javascript:letter(6)">
+                <p id="ltr6" class="petter-nest-pas-un-crime">
+                    i
+                </p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div class="dark-full">
+        <p class="text-purple-big">Words</p>
+        <div id="words">
+          
+        </div>
+        <p class="text-small">You can click the words to set them as done</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

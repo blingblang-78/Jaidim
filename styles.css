@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Determination";
+    src: url("fonts/determination.ttf") format("truetype");
+}
+
+p,body,h2,h3,h4,h5,h6,h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center {
+    text-align: center
+}
+
+.box-full {
+    margin: auto;
+    text-align: center;
+    background-color:rgba(117, 177, 255, 0.342);
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.05);
+    height: 90%;
+}
+
+button {
+    background-color: rgba(0, 89, 255, 0.795);
+    color: white;
+    border-style: solid;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.582);
+}
+
+/*@keyframes blue-button {
+  from {background-color: rgba(0, 89, 255, 0.795);}
+  to {background-color: rgba(25, 91, 212, 0.795);}
+}
+
+@keyframes blue-button-not {
+  from {background-color: rgba(25, 91, 212, 0.795);}
+  to {background-color: rgba(0, 89, 255, 0.795);}
+}*/
+
+.button-blue:hover {
+    /*animation-name: blue-button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;*/
+    transition: background-color 0.5s ease;
+    background-color: rgba(25, 91, 212, 0.795);                                            
+}
+
+.button-blue {
+    /*animation-name: blue-button-not;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;*/
+    transition: background-color 0.5s ease;
+    background-color: rgba(0, 89, 255, 0.795);
+}
+
+.button-blue:active {
+    background-color: rgba(0, 27, 145, 0.795);
+}
+
+.button-red:hover {
+    /*animation-name: blue-button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;*/
+    transition: background-color 0.5s ease;
+    background-color: rgba(212, 25, 25, 0.795);                                            
+}
+
+.button-red {
+    /*animation-name: blue-button-not;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;*/
+    transition: background-color 0.5s ease;
+    background-color: rgba(255, 0, 0, 0.795);
+}
+
+.button-red:active {
+    background-color: rgba(145, 27, 0, 0.795);
+}
+
+.box {
+    margin: auto;
+    text-align: center;
+    background-color:rgba(117, 177, 255, 0.342);
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.05);
+    width:fit-content;
+    height: auto;
+}
+#hexGrid {
+    position: relative;
+    top:20px;
+    right: 20px;
+}
+
+.title {
+    height:auto;
+    width: 50%;
+}
+
+.warning {
+    margin: auto;
+    text-align: center;
+    background-color:rgba(255, 0, 0, 0.342);
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.05);
+    width:fit-content;
+    height: auto;
+}
+
+.dark {
+    margin: auto;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.781);
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.05);
+    width:fit-content;
+    height: calc();
+}
+
+.dark-full {
+    margin: auto;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.781);
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.05);
+    width:90%;
+    height: calc();
+}
+
+.text {
+    font-family: "Determination";
+    font-size:25px;
+    height: 30px;
+    color:transparent;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    
+  filter: drop-shadow(2px 2px #140141);
+  margin: 10px;
+}
+
+.text-small {
+    font-family: "Determination";
+    font-size:12px;
+    height: 15px;
+    color:transparent;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    
+  filter: drop-shadow(1px 1px #140141);
+  margin: 10px;
+}
+
+.text-yellow {
+    font-family: "Determination";
+    font-size:25px;
+    height: 30px;
+    color:transparent;
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgb(253, 239, 45) 100%);
+    -webkit-background-clip: text;
+    
+  filter: drop-shadow(1px 1px #999600);
+  margin: 10px;
+}
+
+.text-purple {
+    font-family: "Determination";
+    font-size:25px;
+    height: 30px;
+    color:transparent;
+    background-image: linear-gradient(180deg,rgba(180, 178, 255) 0%, rgba(21, 23, 207) 100%);
+    -webkit-background-clip: text;
+    
+  filter: drop-shadow(2px 2px rgba(10, 13, 92));
+  margin: 10px;
+}
+
+.text-purple-big {
+    font-family: "Determination";
+    font-size:50px;
+    height: 60px;
+    color:transparent;
+    background-image: linear-gradient(180deg,rgba(180, 178, 255) 0%, rgba(21, 23, 207) 100%);
+    -webkit-background-clip: text;
+    
+  filter: drop-shadow(2px 2px rgba(10, 13, 92));
+  margin: 10px;
+}
+
+.text-yellow-big {
+    font-family: "Determination";
+    font-size:50px;
+    height: 60px;
+    color:transparent;
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgb(253, 239, 45) 100%);
+    -webkit-background-clip: text;
+    
+  filter: drop-shadow(1px 1px #999600);
+  margin: 10px;
+}
+
+.text-red {
+    font-family: "Determination";
+    font-size:25px;
+    height: 30px;
+    color:transparent;
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgb(255, 0, 0) 100%);
+    -webkit-background-clip: text;
+    
+  filter: drop-shadow(1px 1px #990000);
+  margin: 10px;
+}
+/*1px 1px #999600*/
